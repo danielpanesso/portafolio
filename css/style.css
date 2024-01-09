@@ -1,0 +1,191 @@
+html
+{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+body
+{
+    background: url(/img/fondo.jpg);    
+    color: azure;
+    font-size: 1rem;
+}
+.header
+{
+    padding-bottom: 5%;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.navbar-links {
+    margin-top: 20px;
+    height: 50%;
+}
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(250, 242, 144);
+    padding: 1rem;
+}
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.main 
+{
+    display: flex;
+    flex-direction: column;
+}
+h1
+{
+    text-align: center;
+    color: aqua;
+}
+#acercademi
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+}
+h2
+{
+    color: rgb(6, 164, 249);
+}
+#habilidades
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+}
+#proyectos
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+}
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact a
+{
+    font-size: 1.5rem;
+    padding: 5px;
+    color: silver;
+}
+.piedepagina
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+/* menu Hamburguesa  */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .titulo-h1 .efecto
+    {
+        margin-top: 30%;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        color: rgb(33, 91, 252);
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .otro .boton
+    {
+        margin-left: 23px;
+    }
+}
+@media (min-width: 1024px) {
+    .header
+    {
+        display: flex;
+        justify-content: center;
+
+    }
+    .navbar-links ul li a
+    {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    h1
+    {
+font-size: 4rem;
+    }
+    #acercademi
+    {
+        padding-top: 5%;
+        font-size: 2rem;
+    }
+    #habilidades
+    {
+        padding-top: 5%;
+        font-size: 2rem;
+    }
+    #proyectos
+    {
+        padding-top: 5%;
+        font-size: 2rem;
+    }
+    .contact
+    {
+        padding-bottom: 2%;
+    }
+    .contact a
+    {
+        font-size: 2rem;
+    }
+}
