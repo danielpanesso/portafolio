@@ -23,6 +23,7 @@ body
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+   
 }
 .brand-title {
     font-size: 1.5rem;
@@ -66,33 +67,12 @@ body
 {
     display: flex;
     flex-direction: column;
+    size-adjust: 10px;
 }
 h1
 {
     text-align: center;
-    color: aqua;
-}
-#acercademi
-{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 4%;
-}
-h2
-{
-    color: rgb(6, 164, 249);
-}
-#habilidades
-{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 4%;
-}
-#proyectos
-{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 4%;
+    color: aqua; 
 }
 .contact
 {
@@ -121,7 +101,7 @@ h2
     }
     .titulo-h1 .efecto
     {
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .toggle-button {
         display: flex;
@@ -163,22 +143,42 @@ h2
     }
     h1
     {
-font-size: 4rem;
+        font-size: 4rem;
     }
-    #acercademi
+    .subtitulos-pagina-principal
     {
-        padding-top: 5%;
-        font-size: 2rem;
+        padding-top: 10%;
+        font-size: 2.9rem;
+        margin-left: 5%;
+        margin-bottom: 4%;
+        color: rgb(6, 164, 249);
     }
-    #habilidades
+    .parrafos-inicio
     {
-        padding-top: 5%;
-        font-size: 2rem;
+        margin-left: 6%;
+        margin-right: 6%;
+        font-size: 35px;
     }
-    #proyectos
+    .subtitulo-dentro-del-subtitulo
     {
-        padding-top: 5%;
-        font-size: 2rem;
+        margin-left: 6%;   
+        font-size: 30px;
+    }
+    .iconos
+    {
+        margin-left: 5%;
+        margin-right: 1%;
+        font-size: 30px;
+    }
+    .habilidad
+    {
+        margin-left: 5%;
+        margin-right: 1%;
+        font-size: 30px;
+    }
+    .redes
+    {
+        margin-right: 8px;
     }
     .contact
     {
